@@ -1,0 +1,19 @@
+body {background-color: #e3e3e3;
+      font-family: sans-serif;
+}
+
+blockquote {border: 2px solid black;
+            text-align: center;
+            margin-left: 0;
+            background-color:  goldenrod;
+            border-radius: 8px;
+            width: 380px;
+}
+blockquote:hover {color: goldenrod;
+                  background-color: black;
+                  border-color: goldenrod;
+}
+
+.wrap {width: 600px;
+     margin: auto;
+}

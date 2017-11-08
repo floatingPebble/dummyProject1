@@ -1,0 +1,392 @@
+*{margin:0;
+  padding:0;
+}
+html, body{height:100;}
+
+body{background-color: #efefef;}
+#container{width: 100%;
+	   
+	   background-color: black;
+       background-image: url("../img/enceladus.jpg");
+       background-repeat: no-repeat;
+       background-position: center top;
+       background-size: 35%;
+       border-bottom: 1px solid #262228;
+}
+#transparent{background-color: rgba(0, 0, 66, 0.5);
+             width: 100%;
+             
+	   		 
+	   		
+}
+
+
+header h1{font-family:impact, sans-serif;
+	      text-align: center;
+          color:white;
+          font-size: 6vw;
+          padding-top: 8vw;
+          letter-spacing: 1.4vw;
+          font-weight: normal;
+          text-shadow: 0.3vw 0vw 0.2vw black;
+}     
+
+header p {font-family: 'Trebuchet MS', Verdana, sans-serif;
+          text-align: center;
+          color: white;
+          font-size: 1.4vw;
+          padding: 0.1vw;
+          margin-bottom: 7vw;
+}
+
+header button{margin: 2vw auto;
+			  padding: 1.2vw 2.5vw;
+			  background-color: rgba(255, 255, 255, 0);
+			  border: 3px solid white;
+			  border-radius: 5px;
+			  display: block;
+			  transition: background-color 1000ms;
+}
+
+header button a {color: white;
+			     font-family: sans-serif;
+			     font-weight: bold;
+			     text-decoration: none;
+			     transition: color 1000ms;
+}
+
+header button:hover a {color: darkblue;
+					   cursor: pointer;
+					   transition: color 1000ms;
+}
+
+header button:hover{background-color:rgba(255, 255, 255, 1); 
+                    color: darkblue;
+                    cursor: pointer;
+                    transition: background-color 1000ms;
+}
+
+header ul {list-style-type: none;
+		   padding: 5vw 0 1vw 0;
+		   margin: 0;
+		   overflow: auto;
+		   text-align: center;
+}
+
+header ul li {display: inline;
+			  padding: 0 3%;	
+}
+
+header ul a{text-decoration: none;
+			color: white;
+			font-family: Verdana, Arial, sans-serif;
+			font-size: 20px;
+			transition: color 1000ms;
+}
+
+header ul a:hover{color:#b82601;
+				  transition: color 1000ms;	
+}
+
+#active {color: #b82601;}
+
+#prevNext {text-align: center;
+           padding: 35px 0 0 0;
+}
+
+#previous, #next {color:#037584;
+                  font-size: 1.2em;
+                  transition: color 300ms;
+                  font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;	
+}
+#previous{margin-right: 10px;}
+
+#previous:hover, #next:hover {color:#b82601;
+				              transition: color 300ms;
+				              cursor: pointer;
+}
+
+#missions {width: 60%;
+		   padding: 0;
+		   margin: 20px auto;
+		   border: 1px solid #a9a9a9;
+		   background: white;	
+}
+
+#mheadline {font-size: 1em;
+            color: #262228;
+            padding: 6px 0;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 1px solid #a9a9a9;
+            font-family: "Lucida Console", Monaco, monospace;
+}
+
+#missioninfo {font-size: 1em;
+              color: #262228;
+              padding: 12px 6px;
+              min-height: 50px; 
+              font-family: "Courier New", Courier, monospace;
+}
+
+.article {width: 60%;
+          border-bottom: 1px solid #a9a9a9;
+          margin: 80px auto;
+          padding-bottom: 18px;
+}
+
+.article .title {font-size: 2.5vw;
+                 color: #262228;
+                 font-weight: bold;
+                 padding-bottom: 1.2vw;
+                 font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;	
+}
+
+.article img {max-width: 100%;}
+
+.article .arttext {font-size: 1.2em;
+				   color: #565656;
+				   padding-top: 0.8vw;
+				   margin-bottom: 2vw;
+				   font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;	
+}
+
+.arttext a, .dia a {color:#037584;
+                    text-decoration: none;
+                    transition: color 300ms;
+}
+
+.arttext a:hover, .dia a:hover {color:#b82601;
+				                transition: color 300ms;	
+}
+
+.dia {color: #a9a9a9;
+	  font-size: 1em;
+	  float: right;	
+}
+
+#hoversign {width: 80px;
+	        height: 80px;
+			background: #565656;
+			color: white;
+			font-size: 4.5em;
+	        -moz-border-radius: 50%;
+	        -webkit-border-radius: 50%;
+	        border-radius: 50%;
+	        float: right;
+	        text-align: center;
+	        font-family: sans-serif;
+	        font-weight: bold;
+	        position: fixed;
+	        bottom: 3%;
+	        right: 5%;
+	        transition: background 400ms;
+}
+
+#hoversign:hover {cursor: pointer;
+				  background: #b82601; 	
+				  transition: background 500ms;
+}
+
+#hoversign #tooltip{visibility: hidden;
+					width: 14vw;
+					background: #565656;
+					color: #efefef;
+					font-size: 0.8vw;
+					font-weight: normal;
+					font-family: Verdana;
+					padding: 4px 2px;
+					border-radius: 0.5vw;
+					position: absolute;
+					bottom: 100%;
+					left: 50%;
+					margin-left: -7vw;
+					margin-bottom: 0.8vw;
+					
+}
+
+#hoversign:hover #tooltip {visibility:visible;}
+
+#hoversign #tooltip::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #565656 transparent transparent transparent;
+}
+
+footer {background-color: #262228;
+        color: #a9a9a9;
+        height: 160px;
+        padding: 30px;
+        font-size: 1em;
+        text-align: center;
+        font-family: Verdana, sans-serif;
+        clear: both;
+        position: relative;
+}
+
+footer #one {font-size: 1.5em;
+	         padding-bottom: 15px;
+}
+
+footer #cRights {position: absolute;
+	             bottom: 12px;
+	             left: 12px;
+                 color: #a9a9a9;
+}
+
+/*:::::::::::::::::::::::::::::::::::::::ABOUT::::::::::::::::::::::::::::*/
+
+#aboutArticle {width: 70%;
+               border: 1px solid #a9a9a9;
+               margin: 24px 2.5% 80px auto;
+               float: right;
+}
+
+#aboutArticle img {width: 200px;
+                   padding: 12px;
+                   float: right;
+}
+
+#aBtext {
+         
+         padding: 12px;
+         font-size: 1.2em;
+         color: #565656;
+         font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
+}
+
+#abouTitle {font-size: 2.5vw;
+            color: #262228;
+            font-weight: bold;
+            text-align: center;
+            padding: 1vw 0;
+            font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;	
+}
+
+#toDo {background-color: #a9b7c0;
+	   border: 1px solid #a9a9a9;
+	   width: 20%;
+	   margin: 24px auto 80px 2.5%;
+	   padding: 12px;
+	   float: left;	
+}
+
+#toDoTitle {color: white;
+	         font-weight: bold;
+	         font-size: 1.2em;
+	         font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
+	         padding-bottom: 12px;	
+	         text-align: center;
+}
+
+#toDoText {color: white;
+		   font-size: 1em;
+		   padding: 0 12px 0 12px;
+		   font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;		
+}
+
+.toDoSpan {color: grey;
+		   font-size: 1em;
+		   font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;		
+}				   
+
+article iframe {margin: 12px auto;
+                width: 80%;
+}
+/*::::::::::::::::::::::::::::::::::MEDIA QUERIES:::::::::::::::::::::::::::::::::::::::::*/
+
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+	#container{background-size: 45%;}
+	header h1 {font-size: 8vw;}
+	header p {font-size: 2vw;
+              margin-bottom: 8vw;
+	}
+	header button {border: 2px solid white;
+                   margin: 4vw auto;
+	}
+	header ul a {font-size: 18px;}
+	#missions {width: 80%;}
+	.article {width: 80%;}
+    
+    
+    #abouTitle {font-size: 4vw;
+                padding-top: 3vw;
+    }
+    #aboutArticle {margin: 24px 2% 80px auto;}
+	#toDo {width: 21%;
+	       margin: 24px 0.5% 80px 2%;
+	       padding: 6px;
+	}
+	#toDoText {font-size: 0.9em;
+	 		   padding: 0 4px 0 4px;	
+	}
+	footer {padding: 20px;
+            font-size: 0.9em;
+	}
+	footer #one {font-size: 1.3em;
+                 padding: 28px;
+	}      	       	
+}
+
+@media(max-width: 600px){
+	#container{background-size: 50%;}
+	header h1 {font-size: 9vw;}
+	header p {font-size: 3vw;
+              margin-bottom: 10vw;
+	}
+	header button {border: 2px solid white;
+				   margin: 6vw auto;	
+	}
+	header ul a {font-size: 16px;}
+	#missions {width: 80%;}
+	.article {width: 80%;}
+	.article .title {font-size: 7vw;}
+	.article .arttext {font-size: 1.1em;
+                       padding-bottom: 16px;
+	}
+    
+    
+    #abouTitle {font-size: 4vw;
+                padding-top: 3vw;
+    }
+    #aboutArticle {margin: 24px 2% 80px auto;}
+	#toDo {width: 21%;
+	       margin: 24px 0.5% 80px 2%;
+	       padding: 6px;
+	}
+	#toDoText {font-size: 0.9em;
+	 		   padding: 0 4px 0 4px;	
+	}      	       	
+    #abouTitle {font-size: 6vw;
+                padding-top: 3vw;
+    }
+    #aboutArticle {margin: 24px auto 24px auto;
+                   width: 80%;
+                   float: none;
+                   text-align: center;
+    }
+    #aboutArticle img {float: none;
+                       margin: 0 auto;
+    }
+    #aBtext {display: block;}
+	#toDo {width: 80%;
+	       margin: 24px auto 24px auto;
+	       padding: 0px;
+	       float: none;
+	}
+	#toDoText {font-size: 0.9em;
+	 		   padding: 0 4px 0 4px;	
+	}
+	footer {padding: 16px;
+            font-size: 0.8em;
+	}
+	footer #one {font-size: 1.2em;
+                 padding-bottom: 22px;
+	}      	       	
+}

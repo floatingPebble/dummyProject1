@@ -1,0 +1,115 @@
+body {background: black;}
+
+h1 {max-width: 900px;
+    margin: auto;
+    font-size: 48px;
+    color: palegreen;
+    font-family: sans-serif;
+    letter-spacing: 64px;
+    text-align: center;
+    padding-left: 46px;
+    text-shadow: 0px 2px mediumseagreen;
+
+}
+
+#body2 {max-width: 910px;
+	    height: 2000px;
+        margin: auto;
+        background-color: palegreen;
+        border: 2px solid white;
+}
+
+#navlist li a{
+	   color: white;
+       font-size: 22px;
+       font-family: sans-serif;
+       text-decoration: none;
+       text-align: center;
+       display: block;
+       padding-top: 18px;
+       padding-bottom: 18px;
+
+
+     
+}
+
+#navlist li {float: left;
+             background-color: mediumseagreen;
+             width: 225px;             
+             border: 2px solid white;
+             border-bottom: 4px solid seagreen;
+}
+
+#navlist li:hover {background-color: palegreen;
+}
+
+#navlist li:hover a{color: mediumseagreen;}
+
+#navlist {list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: auto;
+          background-color: palegreen;
+}
+
+
+#navlist li:first-child, #navlist li:nth-child(2), #navlist li:nth-child(3) {border-right: 1px solid white;}
+#navlist li:nth-child(2), #navlist li:nth-child(3), #navlist li:nth-child(4) {border-left: 1px solid white;}
+
+.img {float: left;
+	         position: relative;
+	         top: 15px;
+	         left: 15px;
+}
+
+.artc {margin-top: 25px;
+       margin:auto;
+       max-width: 860px;
+       height: 420px;
+       background-color: mediumseagreen;
+}
+
+h2 {position: relative;
+              top: 10px;
+              left: 45px;
+              color: white;    
+}
+
+.artpar {font-family: sans-serif;
+         float: right;
+         max-width: 550px;
+         position: relative;
+         top: 15px;
+         right: 25px;
+         color: white;
+}
+
+.picnam {font-style: italic;
+	     color: palegreen;
+	     padding: 5px;
+	     border: 2px solid palegreen;
+	     position: relative;
+	     bottom: 12px;
+	     max-width: 226px;
+}
+
+.dropdown {display: none;        
+           background-color: beige;           
+           position: absolute;
+           min-width: 227px;
+           z-index: 2
+
+}
+
+.dropdown a {color: mediumseagreen;
+	         font-family: sans-serif;
+	         display: block;
+	         
+}
+
+#navlist li:hover .dropdown {display: block;}
+
+.dropdown a:hover {background-color: palegreen;
+                   color: white;
+}
+

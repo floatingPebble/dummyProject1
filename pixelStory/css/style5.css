@@ -1,0 +1,284 @@
+body {font: 15px/1.5 Arial, Helvetica, sans-serif;
+      padding: 0;
+      margin: 0;
+      background-color: #fedc3d;
+      color: white;
+}
+
+/*:::::::::::::::::HEADER:::::::::::::::::*/
+
+header {background-color: black;
+        border-bottom: solid 1px white;
+        overflow: hidden;
+}
+
+header img {float: left;
+            padding: 50px;
+}
+
+#namepoem {float: left;
+           width: 400px;
+           padding-top: 6px;
+}
+
+h1 {padding-left: 37px;
+    font-size: 40px;
+    color: #fedc3d;
+}
+
+header blockquote {font-style: italic;
+                   line-height: 2;
+}
+
+header ul{float: right;
+          margin-top: 250px;
+
+}
+
+header ul li {display: inline;
+              padding: 0 35px;
+}
+
+header ul li a {text-decoration: none;
+                color: white;
+}
+
+header .current a, header a:hover{color: #fedc3d;
+}
+
+/*::::::::::::::::::::::: .main:::::::::::::::::::::::*/
+
+.main{width: 60%;
+      background-color: black;
+      float: right;
+      margin-right: 50px;
+      margin-top: 20px;
+      margin-bottom: 60px;
+      border: 1px solid black;
+      border-radius: 20px;
+}
+.main2{width: 90%;
+      background-color: black;
+      margin: 20px auto 60px auto;
+      border: 1px solid black;
+      border-radius: 20px;
+}
+
+
+.main article, .main2 article{margin: 20px 10px;
+              overflow: hidden;
+              border-bottom: 1px solid grey;
+}
+
+.main article:last-child, .main2 article:last-child {border-bottom: none;}
+
+article img {float: left;
+	         padding-bottom: 10px;
+	         padding-top: 10px;
+	         padding-left: 10px;
+}
+
+.arttext {float: right;
+	      width: 50%;
+	      margin-right: 25px;
+}
+
+.main2 .arttext {float: right;
+                 width: 65%;
+                 margin-right: 20px;
+}
+
+.main article h2, .main2 article h2 {color: #fedc3d;}
+
+.author {color: #cccccc;
+         float: right;
+         margin-top: 20px;
+}
+.author a {color: grey;
+           text-decoration: none;
+}
+.author a:hover {color: #fedc3d;}
+
+/*:::::::::::::::::::. sidebox::::::::::::::::::::::::::*/
+
+aside {width: 30%;
+       float: left;
+       margin-top: 21px;
+       margin-left: 50px;
+}
+
+.sidebox {background-color: black;
+          border: solid 1px black;
+          border-radius: 20px;
+          margin-bottom: 20px;
+          text-align: center;
+}
+
+.sidebox h3 {color: #fedc3d;}
+
+.sidebox blockquote{font-style: italic;
+                    line-height: 2em;
+                    color: #cccccc;
+}
+
+.qqq {color: #fedc3d;
+      font-size: 18px;
+}
+
+/*::::::::::::::::::Footer:::::::::::::::::::::::*/
+
+footer {width: 100%;
+	    height: 49px;
+        background-color: grey;
+        color: black;
+        text-align: center;
+        border-top: 1px solid black;
+        margin-top: 20px;
+        display: inline-block;
+     }
+
+     /*:::::::::::::::::media Queries::::::::::::*/
+
+     @media(max-width: 600px){
+     	header img,
+     	#namepoem{float: none;
+     			  text-align: center;
+       }
+       header img{display: block;
+       	          margin: 10px auto 10px auto;
+       	          padding: 0;
+       }
+       header blockquote {font-size: 12px;
+                          margin-left: 5px;
+                          margin-right: 5px;
+       }
+
+       #namepoem{width: 100%;}
+       #namepoem h1{padding: 0;
+                    margin: 0;
+       }
+
+       header ul{float: none;
+                 margin: 50px auto 10px auto; 
+                 text-align: center;
+                 padding: 0;
+       }
+
+       header ul li{padding: 0 10px;
+       }
+
+       .main, .main2{width: 90%;
+       	     float: none;
+       	     margin: 20px auto 60px auto;
+       }
+
+       article img {padding-left: 0;
+       	            display: block;
+       	            float: none;
+                    margin: 10px auto 10px auto;
+                    width: 90%;
+        }
+
+       .arttext{float: none;
+                width: 90%;
+                margin: 0 0 0 5px;
+
+       }
+
+       aside {width: 90%;
+              margin: auto;
+              float: none;
+       }
+
+       .sidebox blockquote{line-height: 1.3em;}
+
+        .main2 .arttext{float: left;
+                            width: 90%;
+                            margin: auto;
+                            margin-left: 4%;
+             }
+ 
+     }
+
+
+
+      @media screen and (min-width: 600px) and (max-width: 900px){
+     	header img,
+     	#namepoem{float: none;
+     			  text-align: center;
+       }
+       header img{display: block;
+       	          margin: 10px auto 10px auto;
+       	          padding: 0;
+       }
+       header blockquote {margin-left: 5px;
+                          margin-right: 5px;
+       }
+
+       #namepoem{width: 100%;}
+       #namepoem h1{padding: 0;
+                    margin: 0;
+       }
+
+       header ul{float: none;
+                 margin: 50px auto 10px auto; 
+                 text-align: center;
+                 padding: 0;
+       }
+
+       header ul li{padding: 0 10px;
+       }
+
+       .main, .main2{width: 90%;
+       	             float: none;
+       	             margin: 20px auto 60px auto;
+       }
+
+       article img {padding-left: 0;
+       	            display: block;
+       	            float: none;
+                    margin: 10px auto 10px auto;
+        }
+
+       .arttext{float: none;
+                width: 90%;
+                margin: 0 0 0 5px;
+
+       }
+
+       aside {width: 90%;
+              margin: auto;
+              float: none;
+       }
+
+        .main2 .arttext{float: left;
+                            width: 90%;
+                            margin: auto;
+                            margin-left: 4%;
+             }
+ 
+     }
+
+     @media screen and (min-width: 900px) and (max-width: 1500px){
+
+              .main {margin-right: 4%;}
+              aside {margin-left: 4%;}
+              
+              header ul {margin-top: 43px;}
+              article img {padding-left: 0;
+       	            display: block;
+       	            float: none;
+                    margin: 10px auto 10px auto;
+             }       
+             .arttext{float: none;
+                      width: 90%;
+                      margin: auto;
+             }
+             .main2 .arttext{float: left;
+                            width: 90%;
+                            margin: auto;
+                            margin-left: 4%;
+             }
+     }
+
+    

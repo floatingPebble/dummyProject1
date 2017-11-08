@@ -1,0 +1,39 @@
+body {background-color: #02AFFC;}
+
+.wrap {text-align: center;
+       margin: 0 auto;
+       width: 98%;
+ }
+
+.tile {
+	   
+	   height: 5vw;
+	   width: 6%;	
+	   margin: 0;
+}
+
+table, tr, td{border: 1px solid grey;
+          border-collapse: collapse;
+
+}
+
+.a {background-color: none;
+}
+.b {background-color: #FFCE6D;
+}
+.c {background-color: #019533;
+}
+.d {background-color: brown;
+}
+.e {background-color: grey;
+}
+.f {background-color: white;
+}
+.g {background-color: red;
+}
+.h {background-color: yellow;
+}
+.i {background-color: black;
+}
+
+.tile:hover {border-bottom: 1px solid white;}
